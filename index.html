@@ -8,40 +8,50 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <header>
-        <h2>Daily Journal</h2>
-    </header>
     <main>
-        <form class="journal" action="">
-            <fieldset>
-                <label for="journalDate">Date of entry</label>
-                <input type="date" name="journalDate" id="journalDate">
-            </fieldset>
-            <fieldset>
-                <label for="conceptsCovered">Concepts covered</label>
-                <input type="text" name="conceptsCovered" id="conceptsCovered">
-            </fieldset>
-            <fieldset>
-                <label for="journalEntry">Journal Entry</label>
-                <input type="text" name="journalEntry" id="journalEntry">
-            </fieldset>
-            <fieldset>
-                <label for="mood">Today's Mood</label>
-                <input list="mood-list" name="mood" id="mood">
-                
-                <datalist id="mood-list">
-                    <option value="Excitied"></option>
-                    <option value="Neutral"></option>
-                    <option value="Overwhelmed"></option>
-                    <option value="Exhausted"></option>
-                    <option value="Curious"></option>
-                </datalist>
-            </fieldset>
-            <input class="submit" type="submit" value="Record New Entry">
-        </form>
-        <div class="container mt-4">
-            <div class="row" id="entryLog">
-                
+        <div class="container-lg m-3">
+            <div class="row">
+                <!-- Journal Form -->
+                <div class="col-4 ms-lg-0 ms-md-4 ms-sm-4 ms-xs-4 form-col">
+                    <header>
+                        <h2>Daily Journal</h2>
+                    </header>
+                    <form class="journal" action="">
+                        <fieldset class="field-span">
+                            <label for="journalDate">Date of entry</label>
+                            <input class="field-span" type="date" name="journalDate" id="journalDate">
+                        </fieldset>
+                        <fieldset class="field-span">
+                            <label for="conceptsCovered">Concepts covered</label>
+                            <input class="field-span" type="text" name="conceptsCovered" id="conceptsCovered">
+                        </fieldset>
+                        <fieldset class="field-span">
+                            <label for="journalEntry">Journal Entry</label>
+                            <input class="field-span" type="text" name="journalEntry" id="journalEntry">
+                        </fieldset>
+                        <fieldset class="field-span">
+                            <label for="mood">Today's Mood</label>
+                            <input class="field-span" list="mood-list" name="mood" id="mood">
+                            
+                            <datalist id="mood-list">
+                                <option value="Excitied"></option>
+                                <option value="Neutral"></option>
+                                <option value="Overwhelmed"></option>
+                                <option value="Exhausted"></option>
+                                <option value="Curious"></option>
+                            </datalist>
+                        </fieldset>
+                        <input class="submit" type="submit" value="Record New Note">
+                    </form>
+                </div>
+                <!-- Journal Notes -->
+                <div class="col-8">
+                    <div class="container mt-4">
+                        <div class="row g-4" id="entryLog">
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
