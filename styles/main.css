@@ -53,6 +53,59 @@ h1,h2,h3,h4,h5,h6 {
     min-width: 15rem;
 }
 
+button .btn,.btn-outline-dark {
+    font-size: .9rem;
+}
+
+#form-mood--button, #journal-submit-btn {
+    min-width: 15rem;
+}
+
+/* Journal Form Moods */
+
+.mood-dropdown--list {
+    min-width: 15rem;
+}
+
+.moodStyle {
+    max-width: 15rem;
+}
+
+    /* Excitied */
+#mood-1--span {
+    background-color: var(--chrome-yellow);
+    color: var(--jet);
+}
+
+    /* Neutral */
+#mood-2--span {
+    background-color: var(--dark-jungle-green);
+    color: var(--platinum);
+}
+
+    /* Overwheled */
+#mood-3--span {
+    background-color: var(--tart-orange);
+    color: var(--platinum);
+}
+
+    /* Exahusted */
+#mood-4--span {
+    background-color: var(--jet);
+    color: var(--platinum);
+}
+
+    /* Exhausted */
+#mood-5--span {
+    background-color: purple;
+    color: var(--platinum);
+}
+
+/* Curious */
+#mood-5--span {
+    background-color: var(--steel-blue);
+}
+
 /* Journal Notes */
 
 .journal-notes-col {
