@@ -19,10 +19,11 @@ let journal = [];
 export const useEntries = () => journal.slice();
 
 export const getEntries = () => {
-    return fetch("http://localhost:8088/journal")
+    return fetch("http://localhost:8088/journal?_expand=mood")
     .then(r => r.json())
     .then(entriesReturned => {
         journal = entriesReturned;
+        console.log(journal);
     })
 };
 
