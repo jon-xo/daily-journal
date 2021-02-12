@@ -13,20 +13,35 @@ textarea {
 	line-height: 1.5;
 }
 
+/* Site */
+
+* {
+    /* CSS HSL */
+    --chrome-yellow: hsla(39, 96%, 53%, 1);
+    --jet: hsla(0, 0%, 20%, 1);
+    --tart-orange: hsla(2, 91%, 61%, 1);
+    --platinum: hsla(240, 2%, 92%, 1);
+    --dark-jungle-green: hsla(178, 77%, 7%, 1);
+    --steel-blue: hsla(206, 46%, 46%, 1);
+}
+
 body {
     margin: 1em;
+    background-color: var(--platinum);
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
+  color: var(--jet);
   letter-spacing: 2px;
 }
 
-/* main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-} */
+/* Journal Parent Container */
+
+#journal-main-container {
+    max-height: 95vh;
+}
+
 
 /* Journal Form */
 
@@ -40,9 +55,16 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Journal Notes */
 
-/* .journal {
-    width: 25rem;
-} */
+.journal-notes-col {
+    max-height: 95vh;
+    overflow-x: hidden;
+}
+
+.journal-entry-card .journalEntry {
+    min-height: 15rem;
+    /* min-width: 15rem; */
+    background-color: white;
+}
 
 .journal label {
     width: 100%;

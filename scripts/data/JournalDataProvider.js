@@ -36,3 +36,30 @@ export const useJournalEntries = () => {
     )
     return sortedByDate;
 }
+
+export const saveEntry = entry => {
+    return fetch("http://localhost:8088/journal", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(entry)
+    })
+};
+
+export const deleteEntry = entryID => {
+    return fetch("http://localhost:8088/journal/entryID", {
+        method: "DELETE"
+    })
+};
+
+export const entryDateConversion = (dateString) => {
+    const unformattedDate = new Date(dateString);
+
+    const finalYear = new Intl.DateTimeFormat('en', { year: 'numeric'}).format(unformattedDate)
+    const finalDay = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(unformattedDate)
+    const finalMonth = new Intl.DateTimeFormat('en', { month: '2-digit'}).format(unformattedDate)
+
+    return `${finalMonth}/${finalDay}/${finalYear}`
+    
+};

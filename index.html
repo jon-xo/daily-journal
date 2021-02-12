@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-    <main>
-        <div class="container-lg m-3">
-            <div class="row">
+    <main id="journal-main-container">
+        <div class="container-lg m-3" id="journal-form--col">
+            <div class="row row-cols-sm-2 row-cols-xs-2">
                 <!-- Journal Form -->
-                <div class="col-4 ms-lg-0 ms-md-4 ms-sm-4 ms-xs-4 form-col">
+                <div class="col-3 col-sm-4 ms-lg-0  me-sm-4 me-xs-4 form-col">
                     <header>
                         <h2>Daily Journal</h2>
                     </header>
@@ -26,28 +26,28 @@
                             <input class="field-span" type="text" name="conceptsCovered" id="conceptsCovered">
                         </fieldset>
                         <fieldset class="field-span">
-                            <label for="journalEntry">Journal Entry</label>
-                            <input class="field-span" type="text" name="journalEntry" id="journalEntry">
-                        </fieldset>
-                        <fieldset class="field-span">
                             <label for="mood">Today's Mood</label>
                             <input class="field-span" list="mood-list" name="mood" id="mood">
                             
                             <datalist id="mood-list">
-                                <option value="Excitied"></option>
+                                <option value="Excited"></option>
                                 <option value="Neutral"></option>
                                 <option value="Overwhelmed"></option>
                                 <option value="Exhausted"></option>
                                 <option value="Curious"></option>
                             </datalist>
                         </fieldset>
-                        <input class="submit" type="submit" value="Record New Note">
+                        <fieldset class="field-span">
+                            <label for="journalEntry">Journal Entry</label>
+                            <input class="field-span" type="text" name="journalEntry" id="journalEntry">
+                        </fieldset>
+                        <input class="submit btn btn-outline-dark" id="journal-submit-btn" type="submit" value="Record New Note">
                     </form>
                 </div>
                 <!-- Journal Notes -->
-                <div class="col-8">
-                    <div class="container mt-4">
-                        <div class="row g-4" id="entryLog">
+                <div class="col">
+                    <div class="container-fluid mt-4 journal-notes-col">
+                        <div class="row row-cols-auto row-cols-lg-3 row-cols-sm-1 gy-lg-3 gy-sm-2" id="entryLog">
                             
                         </div>
                     </div>

@@ -1,25 +1,53 @@
 {
-"journal": [
+  "journal": [
     {
-        "id": 1,
-        "date": "01/05/2021",
-        "concept": "HTML & CSS",
-        "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        "mood": "Neutral"
+      "id": 1,
+      "date": "01/05/2021",
+      "concept": "HTML & CSS",
+      "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+      "mood": "Neutral"
     },
     {
-        "id": 2,
-        "date": "01/08/2021",
-        "concept": "Agile",
-        "entry": "Provided insight in first retro after completing team HTML & CSS chanllenge.",
-        "mood": "Curious"
+      "id": 2,
+      "date": "01/08/2021",
+      "concept": "Agile",
+      "entry": "Provided insight in first retro after completing team HTML & CSS chanllenge.",
+      "mood": "Curious"
     },
     {
-        "id": 3,
-        "date": "01/11/2021",
-        "concept": "JavaScript",
-        "entry": "JavaScript function drills!",
-        "mood": "Exhausted"
+      "id": 3,
+      "date": "01/11/2021",
+      "concept": "JavaScript",
+      "entry": "JavaScript function drills!",
+      "mood": "Exhausted"
+    },
+    {
+      "date": "2021-02-11",
+      "concept": "JavaScript",
+      "entry": "Refactored Daily Journal to use API calls.",
+      "mood": "Curious",
+      "id": 4
+    },
+    {
+      "date": "2021-02-11",
+      "concept": "Databases",
+      "entry": "Database normalization and Primary (PK) and Foreign (FK)",
+      "mood": "Excited",
+      "id": 5
+    },
+    {
+      "date": "2021-02-11",
+      "concept": "Databases",
+      "entry": "Database normalization and Primary (PK) and Foreign (FK)",
+      "mood": "Excited",
+      "id": 6
+    },
+    {
+      "date": "2021-02-11",
+      "concept": "HTML & CSS",
+      "entry": "Stylized daily journal.",
+      "mood": "Overwhelmed",
+      "id": 7
     }
-]
+  ]
 }
