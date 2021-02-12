@@ -7,9 +7,15 @@
 
 import { getEntries, useJournalEntries } from "./JournalDataProvider.js";
 import { JournalEntryComponent, JournalEntryHTML, JournalEntryAgile, JournalEntryJS } from "./JournalEntry.js";
+import { JournalForm } from "./JournalForm.js";
 
 // Reference to DOM element for positioning
 const entryLog = document.querySelector('#entryLog');
+const formCol = document.getElementById("journal-form--col")
+
+export const printJournalForm = () => {
+    formCol.innerHTML = JournalForm();
+};
 
 export const EntryListComponent = () => {
 

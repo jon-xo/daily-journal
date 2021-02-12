@@ -11,7 +11,7 @@ export const JournalEntryComponent = (entry) => {
             <section id="entry--${entry.id}" class="journalEntry card-body">
                 <h3 class="card-title">${entryDateConversion(entry.date)}</h3>
                 <h4 class="badge badge-pill bg-secondary text-light">${entry.concept}</h4>
-                <h6>Mood: <small class="text-muted">${entry.mood}</small></h6>
+                <h6>Mood: <small class="text-muted">${entry.mood.label}</small></h6>
                 <h6 class="d-inline">Entry:</h6>
                 <p class="d-inline">${entry.entry}</p>
             </section>
@@ -27,7 +27,7 @@ export const JournalEntryHTML = (entry) => {
             <section id="entry--${entry.id}" class="journalEntry card-body">
                 <h3 class="card-title">${entryDateConversion(entry.date)}</h3>
                 <h4 class="badge badge-pill bg-success">${entry.concept}</h4>
-                <h6>Mood: <small class="text-muted">${entry.mood}</small></h6>
+                <h6>Mood: <small class="text-muted">${entry.mood.label}</small></h6>
                 <h6 class="d-inline">Entry:</h6>
                 <p class="d-inline">${entry.entry}</p>
             </section>
@@ -43,7 +43,7 @@ export const JournalEntryAgile = (entry) => {
             <section id="entry--${entry.id}" class="journalEntry card-body">
                 <h3 class="card-title">${entryDateConversion(entry.date)}</h3>
                 <h4 class="badge badge-pill bg-info text-dark">${entry.concept}</h4>
-                <h6>Mood: <small class="text-muted">${entry.mood}</small></h6>
+                <h6>Mood: <small class="text-muted">${entry.mood.label}</small></h6>
                 <h6 class="d-inline">Entry:</h6>
                 <p class="d-inline">${entry.entry}</p>
             </section>
@@ -59,7 +59,7 @@ export const JournalEntryJS = (entry) => {
             <section id="entry--${entry.id}" class="journalEntry card-body">
                 <h3 class="card-title">${entryDateConversion(entry.date)}</h3>
                 <h4 class="badge badge-pill bg-danger">${entry.concept}</h4>
-                <h6>Mood: <small class="text-muted">${entry.mood}</small></h6>
+                <h6>Mood: <small class="text-muted">${entry.mood.label}</small></h6>
                 <h6 class="d-inline">Entry:</h6>
                 <p class="d-inline">${entry.entry}</p>
             </section>

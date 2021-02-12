@@ -1,53 +1,76 @@
 {
   "journal": [
     {
-      "id": 1,
       "date": "01/05/2021",
       "concept": "HTML & CSS",
       "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-      "mood": "Neutral"
+      "moodId": 2,
+      "id": 1
     },
     {
-      "id": 2,
       "date": "01/08/2021",
       "concept": "Agile",
       "entry": "Provided insight in first retro after completing team HTML & CSS chanllenge.",
-      "mood": "Curious"
+      "moodId": 5,
+      "id": 2
     },
     {
-      "id": 3,
       "date": "01/11/2021",
       "concept": "JavaScript",
       "entry": "JavaScript function drills!",
-      "mood": "Exhausted"
+      "moodId": 4,
+      "id": 3
     },
     {
       "date": "2021-02-11",
       "concept": "JavaScript",
       "entry": "Refactored Daily Journal to use API calls.",
-      "mood": "Curious",
+      "moodId": 5,
       "id": 4
     },
     {
       "date": "2021-02-11",
       "concept": "Databases",
       "entry": "Database normalization and Primary (PK) and Foreign (FK)",
-      "mood": "Excited",
+      "moodId": 1,
       "id": 5
     },
     {
       "date": "2021-02-11",
       "concept": "Databases",
       "entry": "Database normalization and Primary (PK) and Foreign (FK)",
-      "mood": "Excited",
+      "moodId": 1,
       "id": 6
     },
     {
       "date": "2021-02-11",
       "concept": "HTML & CSS",
       "entry": "Stylized daily journal.",
-      "mood": "Overwhelmed",
+      "moodId": 3,
       "id": 7
     }
   ]
+,
+"moods": [
+  {
+    "id": 1,
+    "label": "Excitied"
+  },
+  {
+    "id": 2,
+    "label": "Neutral"
+  },
+  {
+    "id": 3,
+    "label": "Overwheled"
+  },
+  {
+    "id": 4,
+    "label": "Exhausted"
+  },
+  {
+    "id": 5,
+    "label": "Curious"
+  }
+]
 }
