@@ -1,7 +1,7 @@
 export const buildMoodList = (allMoods) => {
     return `
     <div class="dropdown">
-        <button class="btn btn-outline-dark dropdown-toggle mt-2" data-bs-toggle="dropdown" id="form-mood--button">
+        <button class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" id="form-mood--button">
         Mood
         </button>
         <ul class="dropdown-menu dropdown-menu-dark">

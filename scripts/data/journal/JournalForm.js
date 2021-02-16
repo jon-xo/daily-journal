@@ -6,23 +6,23 @@ export const JournalForm = (moodsArray) => {
         <h2>Daily Journal</h2>
     </header>
     <form class="journal" action="">
-        <fieldset class="field-span">
+        <fieldset class="field-span mt-2">
             <label for="journalDate">Date of entry</label>
             <input class="field-span" type="date" name="journalDate" id="journalDate">
         </fieldset>
-        <fieldset class="field-span">
+        <fieldset class="field-span mt-2">
             <label for="conceptsCovered">Concepts covered</label>
             <input class="field-span" type="text" name="conceptsCovered" id="conceptsCovered">
         </fieldset>
-        <fieldset class="field-span">
-            <label for="mood">Today's Mood</label>
+        <fieldset class="field-span mt-2">
+            <label>Today's Mood</label>
             ${buildMoodList(moodsArray)}
             <div class="col" id="current-mood--span">
             </div>
         </fieldset>
         <fieldset class="field-span mt-2">
-            <label for="journalEntry">Journal Entry</label>
-            <input class="field-span" type="text" name="journalEntry" id="journalEntry">
+            <label for="entryArea">Journal Entry</label>
+            <textarea class="field-span" type="text" name="entryArea" id="journalEntry" rows="4"></textarea>
         </fieldset>
         <input class="submit btn btn-outline-dark" id="journal-submit-btn" type="submit" value="Record New Note">
     </form>

@@ -12,13 +12,14 @@ mainContainer.addEventListener("click", e => {
         }
         const specifiedMood = document.querySelector(`[id^="form-selected-mood--"]`).id.split('--');
         console.log(specifiedMood);
-        debugger
         const newJournalEntry = {
             date: `${document.getElementById("journalDate").value}`,
             concept: `${document.getElementById("conceptsCovered").value}`,
             entry: `${document.getElementById("journalEntry").value}`,
             moodId: Number.parseInt(specifiedMood[1])
         }
+
+        debugger
 
        saveEntry(newJournalEntry).then(EntryListComponent);
     }

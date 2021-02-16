@@ -61,6 +61,10 @@ button .btn,.btn-outline-dark {
     min-width: 15rem;
 }
 
+#journalEntry {
+    height: 5rem;
+}
+
 /* Journal Form Moods */
 
 .mood-dropdown--list {
