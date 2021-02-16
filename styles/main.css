@@ -72,38 +72,55 @@ button .btn,.btn-outline-dark {
 }
 
     /* Excitied */
-#mood-1--span {
+.mood-1--span {
     background-color: var(--chrome-yellow);
     color: var(--jet);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
 }
 
     /* Neutral */
-#mood-2--span {
+.mood-2--span {
     background-color: var(--dark-jungle-green);
     color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
 }
 
     /* Overwheled */
-#mood-3--span {
+.mood-3--span {
     background-color: var(--tart-orange);
     color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
 }
 
     /* Exahusted */
-#mood-4--span {
+.mood-4--span {
     background-color: var(--jet);
     color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
 }
 
     /* Exhausted */
-#mood-5--span {
+.mood-5--span {
     background-color: purple;
     color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
 }
 
 /* Curious */
-#mood-5--span {
+.mood-5--span {
     background-color: var(--steel-blue);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
 }
 
 /* Journal Notes */

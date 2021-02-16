@@ -21,7 +21,7 @@ export const buildMoodList = (allMoods) => {
 export const buildCurrentMood = (moodsArray) => {
     return `
     <ul class="list-group">
-        <li class="list-group-item moodStyle text-center" id="${moodsArray.class}">${moodsArray.emoji} ${moodsArray.label}</li>
+        <li class="list-group-item moodStyle text-center fw-bolder ${moodsArray.class}" id="form-selected-mood--${moodsArray.id}">${moodsArray.emoji} ${moodsArray.label}</li>
     </ul>
     `
 };

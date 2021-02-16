@@ -5,18 +5,23 @@ const mainContainer = document.getElementById("journal-main-container");
 
 mainContainer.addEventListener("click", e => {
     if (e.target.id === 'journal-submit-btn') {
-        console.log(e.target.className);
-        console.log(document.getElementById("journalDate").value);
+        const saveObject = {
+            id: `${e.target.id}`,
+            class: `${e.target.className}`,
+            value: `${e.target.innerHTML}`
+        }
+        const specifiedMood = document.querySelector(`[id^="form-selected-mood--"]`).id.split('--');
+        console.log(specifiedMood);
         debugger
-       const newJournalEntry = {
+        const newJournalEntry = {
             date: `${document.getElementById("journalDate").value}`,
             concept: `${document.getElementById("conceptsCovered").value}`,
             entry: `${document.getElementById("journalEntry").value}`,
-            mood: `${document.getElementById("mood").value}`
-       }
+            moodId: Number.parseInt(specifiedMood[1])
+        }
+
        saveEntry(newJournalEntry).then(EntryListComponent);
     }
-
 })
 
 mainContainer.addEventListener("click", e => {

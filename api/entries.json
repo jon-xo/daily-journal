@@ -48,6 +48,20 @@
       "entry": "Stylized daily journal.",
       "moodId": 3,
       "id": 7
+    },
+    {
+      "date": "2021-02-12",
+      "concept": "JavaScript",
+      "entry": "Refactored daily journal with an additional json element.",
+      "moodId": 1,
+      "id": 8
+    },
+    {
+      "date": "2021-02-12",
+      "concept": "Agile",
+      "entry": "First Friday without a Retro!",
+      "moodId": 5,
+      "id": 9
     }
   ],
   "moods": [
