@@ -53,6 +53,80 @@ h1,h2,h3,h4,h5,h6 {
     min-width: 15rem;
 }
 
+button .btn,.btn-outline-dark {
+    font-size: .9rem;
+}
+
+#form-mood--button, #journal-submit-btn {
+    min-width: 15rem;
+}
+
+#journalEntry {
+    height: 5rem;
+}
+
+/* Journal Form Moods */
+
+.mood-dropdown--list {
+    min-width: 15rem;
+}
+
+.moodStyle {
+    max-width: 15rem;
+}
+
+    /* Excitied */
+.mood-1--span {
+    background-color: var(--chrome-yellow);
+    color: var(--jet);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+    /* Neutral */
+.mood-2--span {
+    background-color: var(--dark-jungle-green);
+    color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+    /* Overwheled */
+.mood-3--span {
+    background-color: var(--tart-orange);
+    color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+    /* Exahusted */
+.mood-4--span {
+    background-color: var(--jet);
+    color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+    /* Exhausted */
+.mood-5--span {
+    background-color: purple;
+    color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+/* Curious */
+.mood-5--span {
+    background-color: var(--steel-blue);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
+}
+
 /* Journal Notes */
 
 .journal-notes-col {

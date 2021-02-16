@@ -1,5 +1,5 @@
 {
-  "journal": [
+  "entries": [
     {
       "date": "01/05/2021",
       "concept": "HTML & CSS",
@@ -48,29 +48,66 @@
       "entry": "Stylized daily journal.",
       "moodId": 3,
       "id": 7
+    },
+    {
+      "date": "2021-02-12",
+      "concept": "JavaScript",
+      "entry": "Refactored daily journal with an additional json element.",
+      "moodId": 1,
+      "id": 8
+    },
+    {
+      "date": "2021-02-12",
+      "concept": "Agile",
+      "entry": "First Friday without a Retro!",
+      "moodId": 5,
+      "id": 9
+    },
+    {
+      "date": "2021-02-16",
+      "concept": "html & css",
+      "entry": "Figured out input / textarea.",
+      "moodId": 1,
+      "id": 10
+    },
+    {
+      "date": "2021-02-16",
+      "concept": "HTML & CSS",
+      "entry": "Discovered input vs textarea elements.",
+      "moodId": 1,
+      "id": 11
+    }
+  ],
+  "moods": [
+    {
+      "id": 1,
+      "label": "Excitied",
+      "emoji": "🥳",
+      "class": "mood-1--span"
+    },
+    {
+      "id": 2,
+      "label": "Neutral",
+      "emoji": "😑",
+      "class": "mood-2--span"
+    },
+    {
+      "id": 3,
+      "label": "Overwhelmed",
+      "emoji": "😤",
+      "class": "mood-3--span"
+    },
+    {
+      "id": 4,
+      "label": "Exhausted",
+      "emoji": "🥱",
+      "class": "mood-4--span"
+    },
+    {
+      "id": 5,
+      "label": "Curious",
+      "emoji": "🧐",
+      "class": "mood-5--span"
     }
   ]
-,
-"moods": [
-  {
-    "id": 1,
-    "label": "Excitied"
-  },
-  {
-    "id": 2,
-    "label": "Neutral"
-  },
-  {
-    "id": 3,
-    "label": "Overwheled"
-  },
-  {
-    "id": 4,
-    "label": "Exhausted"
-  },
-  {
-    "id": 5,
-    "label": "Curious"
-  }
-]
 }

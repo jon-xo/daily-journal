@@ -19,11 +19,10 @@ let journal = [];
 export const useEntries = () => journal.slice();
 
 export const getEntries = () => {
-    return fetch("http://localhost:8088/journal?_expand=mood")
+    return fetch("http://10.0.10.20:8088/entries?_expand=mood")
     .then(r => r.json())
     .then(entriesReturned => {
         journal = entriesReturned;
-        console.log(journal);
     })
 };
 
@@ -39,7 +38,7 @@ export const useJournalEntries = () => {
 }
 
 export const saveEntry = entry => {
-    return fetch("http://localhost:8088/journal", {
+    return fetch("http://10.0.10.20:8088/entries", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -49,7 +48,7 @@ export const saveEntry = entry => {
 };
 
 export const deleteEntry = entryID => {
-    return fetch("http://localhost:8088/journal/entryID", {
+    return fetch("http://10.0.10.20:8088/entries/entryID", {
         method: "DELETE"
     })
 };
