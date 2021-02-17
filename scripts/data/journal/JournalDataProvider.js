@@ -19,7 +19,7 @@ let journal = [];
 export const useEntries = () => journal.slice();
 
 export const getEntries = () => {
-    return fetch("http://10.0.10.20:8088/entries?_expand=mood")
+    return fetch("http://10.0.10.20:8088/entries?_expand=teacher&_expand=mood")
     .then(r => r.json())
     .then(entriesReturned => {
         journal = entriesReturned;
