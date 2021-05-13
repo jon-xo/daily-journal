@@ -19,7 +19,7 @@ let journal = [];
 export const useEntries = () => journal.slice();
 
 export const getEntries = () => {
-    return fetch("https://jonxo-daily-journal.herokuapp.com/entries?_expand=teacher&_expand=mood")
+    return fetch("https://jonxo-daily-journal.herokuapp.com/entries?_expand=mood")
     .then(r => r.json())
     .then(entriesReturned => {
         journal = entriesReturned;
