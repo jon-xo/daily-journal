@@ -11,7 +11,7 @@ A minimalist front-end design project built with Vanilla JavaScript, which allow
     - If the version is older than the minimum requirement, update to the latest stable version of [node](https://docs.npmjs.com/try-the-latest-stable-version-of-node) & [npm](https://docs.npmjs.com/try-the-latest-stable-version-of-npm).
 2. Use https or SSH to clone the project folder to a local directory:
     ```Shell
-       $ git clone ...
+    $ git clone ...
     ```
 3. Install the JSON Server node package: 
     ```Shell
