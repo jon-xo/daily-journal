@@ -1,7 +1,7 @@
 let insArray = [];
 
 export const getInstructors = () => {
-    return fetch("http://10.0.10.20:8088/teachers")
+    return fetch("https://jonxo-daily-journal.herokuapp.com/teachers")
     .then(ins => ins.json())
     .then(instructorsR => {
         insArray = instructorsR;

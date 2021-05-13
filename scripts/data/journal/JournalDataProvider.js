@@ -19,7 +19,7 @@ let journal = [];
 export const useEntries = () => journal.slice();
 
 export const getEntries = () => {
-    return fetch("http://10.0.10.20:8088/entries?_expand=teacher&_expand=mood")
+    return fetch("https://jonxo-daily-journal.herokuapp.com/entries?_expand=teacher&_expand=mood")
     .then(r => r.json())
     .then(entriesReturned => {
         journal = entriesReturned;
@@ -38,7 +38,7 @@ export const useJournalEntries = () => {
 }
 
 export const saveEntry = entry => {
-    return fetch("http://10.0.10.20:8088/entries", {
+    return fetch("https://jonxo-daily-journal.herokuapp.com/entries", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -48,7 +48,7 @@ export const saveEntry = entry => {
 };
 
 export const deleteEntry = entryID => {
-    return fetch("http://10.0.10.20:8088/entries/entryID", {
+    return fetch("https://jonxo-daily-journal.herokuapp.com/entries/entryID", {
         method: "DELETE"
     })
 };
