@@ -8,7 +8,7 @@ export const buildMoodList = (allMoods) => {
             ${allMoods.map(
                 (mood) => {
                     return `
-                    <button type="button" class="btn btn-link dropdown-item mood-dropdown--list" id="m--${mood.id}">${mood.label}</button>
+                    <button type="button" class="btn btn-link dropdown-item form-dropdown--list" id="m--${mood.id}">${mood.label}</button>
                     `
                 }
             ).join("")

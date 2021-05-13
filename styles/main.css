@@ -65,9 +65,24 @@ button .btn,.btn-outline-dark {
     height: 5rem;
 }
 
+
+/* Journal Form Instructor */
+
+.journal-instructor {
+    max-width: 15rem;
+    background-color: var(--jet);
+    color: var(--platinum);
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s
+}
+
+.journal-instructor img {
+    max-height: 2.5rem;
+}
+
 /* Journal Form Moods */
 
-.mood-dropdown--list {
+.form-dropdown--list {
     min-width: 15rem;
 }
 

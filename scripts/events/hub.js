@@ -1,5 +1,5 @@
 import { saveEntry } from "../data/journal/JournalDataProvider.js";
-import { EntryListComponent , printMoodSpan } from "../data/journal/JournalEntryList.js";
+import { EntryListComponent , printMoodSpan, printInstructorSel } from "../data/journal/JournalEntryList.js";
 
 const mainContainer = document.getElementById("journal-main-container");
 
@@ -11,15 +11,17 @@ mainContainer.addEventListener("click", e => {
             value: `${e.target.innerHTML}`
         }
         const specifiedMood = document.querySelector(`[id^="form-selected-mood--"]`).id.split('--');
-        console.log(specifiedMood);
+        const specifiedIns = document.querySelector(`[id^="selectedIns--"]`).id.split('--')
+        // console.log(specifiedMood);
         const newJournalEntry = {
             date: `${document.getElementById("journalDate").value}`,
             concept: `${document.getElementById("conceptsCovered").value}`,
             entry: `${document.getElementById("journalEntry").value}`,
-            moodId: Number.parseInt(specifiedMood[1])
+            moodId: Number.parseInt(specifiedMood[1]),
+            teacherId: Number.parseInt(specifiedIns[1])
         }
 
-        debugger
+        // debugger
 
        saveEntry(newJournalEntry).then(EntryListComponent);
     }
@@ -34,3 +36,11 @@ mainContainer.addEventListener("click", e => {
         printMoodSpan(listenerObject.id)
     }
 })
+
+mainContainer.addEventListener("click", e => {
+    if (e.target.id.startsWith("ins--")) {
+        printInstructorSel(e.target.id)
+    }
+})
+
+

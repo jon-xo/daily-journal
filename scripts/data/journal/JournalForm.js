@@ -1,6 +1,7 @@
+import { buildInstructorList } from "../instructor/instructorList.js";
 import { buildMoodList } from "../mood/moodDropdownList.js";
 
-export const JournalForm = (moodsArray) => {
+export const JournalForm = (moodsArray, insArray) => {
     return `
     <header>
         <h2>Daily Journal</h2>
@@ -18,6 +19,12 @@ export const JournalForm = (moodsArray) => {
             <label>Today's Mood</label>
             ${buildMoodList(moodsArray)}
             <div class="col" id="current-mood--span">
+            </div>
+        </fieldset>
+        <fieldset class="field-span mt-2">
+            <label>Instructor</label>
+            ${buildInstructorList(insArray)}
+            <div class="col" id="current-instructor--span">
             </div>
         </fieldset>
         <fieldset class="field-span mt-2">
